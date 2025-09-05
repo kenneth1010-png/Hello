@@ -2,7 +2,7 @@
 
 int Control(int altitude) {
   int thruster = 0;
-if (altitude >= 100)
+if (altitude > 100)
   thruster = 0;
 else if (altitude > 0 && altitude <= 100)
   thruster = 1;
