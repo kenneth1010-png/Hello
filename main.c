@@ -2,10 +2,13 @@
 
 int Control(int altitude) {
   int thruster = 0;
-if (altitude > 100)
+  //if the altitude is above 100 then we have no thrust.
+if (altitude >= 100)
   thruster = 0;
-else if (altitude > 0 && altitude <= 100)
+//if the altitude is under 100 then we have thrust.
+else if (altitude > 0 && altitude < 100)
   thruster = 1;
+//at last the we only option or situation we have is altitude equal to 0 which means no thrust and we have lande.
 else { 
   thruster = 0;
 }
